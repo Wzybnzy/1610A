@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header .head img {
+    width: 100%;
+    height: auto;
+}
+
+header .icon {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.icon dl {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+section>.book {
+    width: 100%;
+    height: auto;
+}
+
+section>.book>.book-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-content>.top {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.book-content>.top>h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.book-content>.top>p {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.book-content>.book-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.book-list>dl {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 25%;
+}
+
+.book-list>dl>dt {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.book-list>dl>dt>img {
+    width: 100%;
+    height: 100px;
+}
+
+.book-list>dl>dd>p {
+    font-size: 14px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.better {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+section .jptj {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.jptj h3 {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 40px;
+}
+
+.jptj dl {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.jptj dl dt {
+    widows: 100%;
+    height: 100%;
+}
+
+.jptj dl dt img {
+    width: 60%;
+    height: 70%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.jptj dl dd {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.likeList p {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.likeList dl {
+    width: 33%;
+    text-align: center;
+}
+
+.likeList dl dt img {
+    width: 90%;
+    height: auto;
+}
+
+.likeList dl {
+    margin-top: 10px;
+}
+
+.likeList dl dd {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.jptj dl dd .bigs {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.jptj dl dd span {
+    margin: 10px 3px;
+}
+
+
+/* .jptj dl dt>img {
+    width: 30%;
+    height: 60%;
+} */
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>dl {
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>dl img {
+    width: 70%;
+}
+
+footer>dl dd {
+    font-size: 12px;
+}
