@@ -1,0 +1,461 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 5.6rem;
+}
+
+header .swiper-container {
+  width: 100%;
+  height: 4rem;
+}
+
+header .ygc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .ygc dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 1.6rem;
+}
+
+section {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+section .list_box {
+  width: 100%;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section .list_box .list_h2 {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 0.8rem;
+}
+
+section .list_box .list_h2 h2 {
+  font-size: 0.4rem;
+}
+
+section .list_box .list_dl {
+  width: 100%;
+}
+
+section .list_box .list_dl dl {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.21333rem 0;
+}
+
+section .list_box .list_dl dl dt img {
+  margin-right: 0.26667rem;
+}
+
+section .list_box .list_dl dl dd {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+section .list_box .list_dl dl dd .d_div1 b {
+  font-size: 0.4rem;
+}
+
+section .list_box .list_dl dl dd .d_div1 p {
+  color: #686868;
+  margin-top: 0.13333rem;
+}
+
+section .list_box .list_dl dl dd .d_div2 {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  color: #686868;
+}
+
+section .content-list {
+  width: 100%;
+  height: 9.2rem;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section .content-list h2 {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 0.42667rem;
+  font-weight: bold;
+  margin-left: 0.26667rem;
+}
+
+section .content-list div {
+  width: 100%;
+  height: 8.4rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+section .content-list div dl {
+  width: 2.93333rem;
+  height: 4rem;
+  margin: 0 0.13333rem;
+}
+
+section .content-list div dl dt {
+  width: 100%;
+  height: 2.93333rem;
+}
+
+section .content-list div dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .content-list div dl dd {
+  margin-top: 0.13333rem;
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+section .box-list {
+  width: 100%;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section .box-list .win {
+  width: 100%;
+  padding: 0.13333rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .box-list .win h3 {
+  font-size: 0.53333rem;
+  font-weight: bold;
+}
+
+section .box-list .win span {
+  font-size: 0.37333rem;
+  color: #999;
+}
+
+section .box-list .main {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+section .box-list .main dl {
+  margin: 0 0.13333rem;
+  width: 2.66667rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 0.4rem;
+}
+
+section .box-list .main dl dt {
+  width: 2.66667rem;
+  height: 4rem;
+}
+
+section .box-list .main dl dt img {
+  width: 2.66667rem;
+  height: 4rem;
+}
+
+section .box-list .main dd {
+  width: 100%;
+  font-size: 0.37333rem;
+}
+
+footer {
+  width: 100%;
+  height: 1.33333rem;
+  background: #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1.06667rem;
+  height: 1.06667rem;
+}
+
+footer dl dt {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  background: yellow;
+}

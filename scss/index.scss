@@ -1,0 +1,202 @@
+@import "_mixin.scss";
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(210px);
+    .swiper-container {
+        width: 100%;
+        height: pxTorem(150px);
+    }
+    .ygc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        dl {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: pxTorem(60px);
+        }
+    }
+}
+
+section {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .list_box {
+        width: 100%;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        .list_h2 {
+            @include box_flex;
+            @include align;
+            @include justify(space-between);
+            height: pxTorem(30px);
+            h2 {
+                font-size: pxTorem(15px);
+            }
+        }
+        .list_dl {
+            width: 100%;
+            dl {
+                @include box_flex;
+                border-bottom: 1px solid #e1e1e1;
+                padding: pxTorem(8px) 0;
+                dt {
+                    img {
+                        margin-right: pxTorem(10px);
+                    }
+                }
+                dd {
+                    @include box_flex;
+                    @include direction(column);
+                    @include justify(space-between);
+                    @include flex;
+                    .d_div1 {
+                        b {
+                            font-size: pxTorem(15px);
+                        }
+                        p {
+                            color: #686868;
+                            margin-top: pxTorem(5px);
+                        }
+                    }
+                    .d_div2 {
+                        @include box_flex;
+                        @include justify(space-between);
+                        color: #686868;
+                    }
+                }
+            }
+        }
+    }
+    .content-list {
+        width: 100%;
+        height: pxTorem(345px);
+        padding: 0 10px;
+        @include sizing;
+        h2 {
+            width: 100%;
+            height: pxTorem(30px);
+            @include box_flex;
+            @include align;
+            font-size: pxTorem(16px);
+            font-weight: bold;
+            margin-left: pxTorem(10px);
+        }
+        div {
+            width: 100%;
+            height: pxTorem(315px);
+            @include box_flex;
+            flex-wrap: wrap;
+            @include justify;
+            @include align;
+            dl {
+                width: pxTorem(110px);
+                height: pxTorem(150px);
+                margin: 0 pxTorem(5px);
+                dt {
+                    width: 100%;
+                    height: pxTorem(110px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    margin-top: pxTorem(5px);
+                    width: 100%;
+                    @include box_flex;
+                    @include direction(column);
+                    @include justify;
+                    @include align;
+                }
+            }
+        }
+    }
+    .box-list {
+        width: 100%;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        .win {
+            width: 100%;
+            padding: pxTorem(5px) 0;
+            @include sizing;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: pxTorem(20px);
+                font-weight: bold;
+            }
+            span {
+                font-size: pxTorem(14px);
+                color: #999;
+            }
+        }
+        .main {
+            width: 100%;
+            display: flex;
+            flex-shrink: 0;
+            overflow-x: auto;
+            dl {
+                margin: 0 pxTorem(5px);
+                width: pxTorem(100px);
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                margin-top: pxTorem(15px);
+                dt {
+                    width: pxTorem(100px);
+                    height: pxTorem(150px);
+                    img {
+                        width: pxTorem(100px);
+                        height: pxTorem(150px);
+                    }
+                }
+            }
+            dd {
+                width: 100%;
+                font-size: pxTorem(14px);
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    dl {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: pxTorem(40px);
+        height: pxTorem(40px);
+        dt {
+            width: pxTorem(20px);
+            height: pxTorem(20px);
+            background: yellow;
+        }
+    }
+}
