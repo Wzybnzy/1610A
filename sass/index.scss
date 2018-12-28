@@ -1,0 +1,208 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    i.iconfont {
+        font-size: pxTorem(18px);
+    }
+}
+
+section {
+    width: 100%;
+    @include box_flex;
+    @include direction(column);
+    @include flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .pic {
+        width: 100%;
+        height: pxTorem(160px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .scroll_foot {
+        width: 100%;
+        height: 100%;
+        padding-left: pxTorem(15px);
+        @include sizing;
+        .scroll_foot_top {
+            width: 100%;
+            height: pxTorem(45px);
+            @include box_flex;
+            @include justify(space-between);
+            @include align;
+            @include sizing;
+            .icon-angle-right {
+                font-size: pxTorem(14px);
+            }
+            span:nth-child(1) {
+                font-size: pxTorem(14px);
+                font-weight: 666;
+            }
+            span:nth-child(2) {
+                color: #999;
+            }
+        }
+        dl {
+            width: 100%;
+            height: pxTorem(114px);
+            @include box_flex;
+            padding-top: pxTorem(5px);
+            border-bottom: 1px solid #ccc;
+            dt {
+                margin-right: pxTorem(10px);
+            }
+            dd {
+                padding-right: pxTorem(15px);
+                @include sizing;
+                p:nth-child(1) {
+                    width: 100%;
+                    height: pxTorem(30px);
+                    line-height: pxTorem(30px);
+                    font-size: pxTorem(14px);
+                    font-weight: 666;
+                }
+                p:nth-child(2) {
+                    width: 100%;
+                    height: pxTorem(40px);
+                }
+                p:nth-child(3) {
+                    width: 100%;
+                    height: pxTorem(44px);
+                    line-height: pxTorem(44px);
+                    @include box_flex;
+                    @include justify(space-between);
+                }
+            }
+        }
+    }
+    .type {
+        width: 100%;
+        height: pxTorem(75px);
+        @include box_flex;
+        dl {
+            flex: 1;
+            @include box_flex;
+            @include direction(column);
+            @include justify;
+            @include align;
+        }
+    }
+    .ban {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .lei {
+        width: 97%;
+        padding: pxTorem(25px) pxTorem(5px);
+        @include box_flex;
+        @include sizing;
+        @include direction ($dir: row);
+        @include justify ($justify: space-around);
+        @include align($align: center);
+        background: #fff;
+        dl {
+            height: 100%;
+            @include direction ($dir: column);
+            @include box_flex;
+            dt {
+                @include box_flex;
+                @include justify ($justify: space-around);
+                @include align($align: center);
+            }
+            dd {
+                line-height: pxTorem(30px);
+            }
+        }
+    }
+    .nei {
+        width: 100%;
+        @include box_flex;
+        @include direction ($dir: column);
+        background: #fff;
+        h4 {
+            width: 100%;
+            font-size: pxTorem(20px);
+            margin: pxTorem(10px);
+        }
+        div {
+            @include box_flex;
+            @include direction ($dir: row);
+            @include justify ($justify: space-around);
+            @include align($align: center);
+            margin-top: pxTorem(3px);
+            width: 100%;
+            dl {
+                width: 30%;
+                @include box_flex;
+                @include direction ($dir: column);
+                @include justify ($justify: space-around);
+                @include align($align: center);
+            }
+        }
+    }
+    .broa {
+        width: 100%;
+        @include box_flex;
+        @include direction($dir: column);
+        padding: pxTorem(5px);
+        h4 {
+            width: 100%;
+            font-size: pxTorem(20px);
+            margin: pxTorem(10px);
+        }
+        div {
+            width: 100%;
+            @include box_flex;
+            @include direction($dir: row);
+            overflow-x: auto;
+            dl {
+                margin: pxTorem(5px);
+            }
+        }
+    }
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    background: rgba(255, 255, 255, 0.0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include box_flex;
+    @include justify(space-around);
+    @include align;
+    font-size: pxTorem(16px);
+    color: #fff;
+    div {
+        span {
+            margin-right: pxTorem(10px);
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(44px);
+    @include box_flex;
+    @include justify(space-around);
+    font-size: pxTorem(16px);
+    dl {
+        @include box_flex;
+        @include direction(column);
+        dd,
+        dt {
+            @include justify(center);
+            @include align;
+            text-align: center;
+        }
+    }
+}
